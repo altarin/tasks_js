@@ -27,33 +27,47 @@
 //Найдите последнюю форму на странице. При нажатии на кнопку выведите значение атрибута "name" этой формы.
 //Подсказка: используйте коллекцию document.forms и метод getAttribute
 
-function makeThree() {
-	const paragraphThree = document.getElementById('practicum3');
-	const lastForm = document.forms[3];
-	const name = lastForm.getAttribute('name');
-	console.log(name);
-}
+// function makeThree() {
+// 	const paragraphThree = document.getElementById('practicum3');
+// 	const lastForm = document.forms[3];
+// 	const name = lastForm.getAttribute('name');
+// 	console.log(name);
+// }
+//
+// document.querySelector('.b-3').addEventListener('click', makeThree);
+//
+// //Задание 4
+//
+// function makeFour() {
+// 	const paragraphFour = document.getElementById('practicum4');
+//
+// //Найдите все формы на странице и выведите их названия
+// //При нажатии на кнопку выведите названия всех найденных форм, разделенных запятыми
+// //Подсказка: Для решения задания вы можете использовать следующую логику:
+// //- Получите все формы на странице, используя коллекцию document.forms
+// 	const allForms = document.forms;
+// //- Создайте пустой массив formNames для хранения названий форм
+// 	const formNames = [];
+// //- Пройдитесь по каждой форме в коллекции и для каждой формы
+// 	for (form of allForms){
+// //- Получите значение атрибута name с помощью метода getAttribute
+// 		const name = form.getAttribute('name');
+// //- Добавьте полученное название в массив formNames
+// 		formNames.push(name)
+// 	}
+// //- Преобразуйте массив formNames в строку, разделив названия запятыми, с помощью метода join()
+// 	const namesString = formNames.join(', ')
+// //- Выведите полученную строку названий форм в элемент с id practicum4 при нажатии на кнопку
+// 	paragraphFour.innerText = namesString;
+// }
+// document.querySelector('.b-4').addEventListener('click', makeFour);
 
-document.querySelector('.b-3').addEventListener('click', makeThree);
 
-//Задание 4
-//Найдите все формы на странице и выведите их названия
-//При нажатии на кнопку выведите названия всех найденных форм, разделенных запятыми
-//Подсказка: Для решения задания вы можете использовать следующую логику:
-//- Получите все формы на странице, используя коллекцию document.forms
-//- Создайте пустой массив formNames для хранения названий форм
-//- Пройдитесь по каждой форме в коллекции и для каждой формы
-//- Получите значение атрибута name с помощью метода getAttribute
-//- Добавьте полученное название в массив formNames
-//- Преобразуйте массив formNames в строку, разделив названия запятыми, с помощью метода join()
-//- Выведите полученную строку названий форм в элемент с id practicum4 при нажатии на кнопку
 
-function makeFour() {
-	const paragraphFour = document.getElementById('practicum4');
-	//Ваш код
-}
 
-document.querySelector('.b-4').addEventListener('click', makeFour);
+
+
+
 
 //Задание 5
 //Найдите третью форму на странице, используя document.forms и имя формы (которое вы знаете из задания 4)
