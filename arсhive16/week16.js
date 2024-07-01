@@ -16,7 +16,9 @@ document.querySelector('.b-1').addEventListener('click', makeOne);
 
 function makeTwo() {
 	const paragraphTwo = document.getElementById('practicum2');
-	//Ваш код
+	const formOne = document.forms[0];
+	const name = formOne.getAttribute('name');
+	console.log(name);
 }
 
 document.querySelector('.b-2').addEventListener('click', makeTwo);
