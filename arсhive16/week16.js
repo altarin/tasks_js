@@ -1,27 +1,27 @@
 //Задание 1
 //Найдите все формы на странице. При нажатии на кнопку выведите количество найденных форм.
 //Подсказка: используйте коллекцию document.forms и свойство length
-
-function makeOne() {
-	const paragraph = document.getElementById('practicum');
-	const findForms = document.forms.length;
-	console.log(findForms);
-}
-
-document.querySelector('.b-1').addEventListener('click', makeOne);
+//
+// function makeOne() {
+// 	const paragraph = document.getElementById('practicum');
+// 	const findForms = document.forms.length;
+// 	console.log(findForms);
+// }
+//
+// document.querySelector('.b-1').addEventListener('click', makeOne);
 
 //Задание 2
 //Найдите первую форму на странице. При нажатии на кнопку выведите значение атрибута "name" этой формы.
 //Подсказка: используйте коллекцию document.forms и метод getAttribute
-
-function makeTwo() {
-	const paragraphTwo = document.getElementById('practicum2');
-	const formOne = document.forms[0];
-	const name = formOne.getAttribute('name');
-	console.log(name);
-}
-
-document.querySelector('.b-2').addEventListener('click', makeTwo);
+//
+// function makeTwo() {
+// 	const paragraphTwo = document.getElementById('practicum2');
+// 	const formOne = document.forms[0];
+// 	const name = formOne.getAttribute('name');
+// 	console.log(name);
+// }
+//
+// document.querySelector('.b-2').addEventListener('click', makeTwo);
 
 //Задание 3
 //Найдите последнюю форму на странице. При нажатии на кнопку выведите значение атрибута "name" этой формы.
@@ -29,7 +29,9 @@ document.querySelector('.b-2').addEventListener('click', makeTwo);
 
 function makeThree() {
 	const paragraphThree = document.getElementById('practicum3');
-	//Ваш код
+	const lastForm = document.forms[3];
+	const name = lastForm.getAttribute('name');
+	console.log(name);
 }
 
 document.querySelector('.b-3').addEventListener('click', makeThree);
