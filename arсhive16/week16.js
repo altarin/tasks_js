@@ -64,11 +64,6 @@
 
 
 
-
-
-
-
-
 //Задание 5
 //Найдите третью форму на странице, используя document.forms и имя формы (которое вы знаете из задания 4)
 //Выведите на страницу количество элементов в форме, используя коллекцию form.elements
@@ -76,7 +71,9 @@
 
 function makeFive() {
 	const paragraphFive = document.getElementById('practicum5');
-	//Ваш код
+	const formThree = document.forms[2];
+	const elementsCount = formThree.elements.length;
+	paragraphFive.innerText = elementsCount;
 }
 
 document.querySelector('.b-5').addEventListener('click', makeFive);
