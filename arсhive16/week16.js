@@ -69,25 +69,27 @@
 //Выведите на страницу количество элементов в форме, используя коллекцию form.elements
 //Подсказка: используйте коллекцию document.forms для получения формы по индексу и свойство form.elements.length для получения количества элементов в форме
 
-function makeFive() {
-	const paragraphFive = document.getElementById('practicum5');
-	const formThree = document.forms[2];
-	const elementsCount = formThree.elements.length;
-	paragraphFive.innerText = elementsCount;
-}
-
-document.querySelector('.b-5').addEventListener('click', makeFive);
+// function makeFive() {
+// 	const paragraphFive = document.getElementById('practicum5');
+// 	const formThree = document.forms[2];
+// 	const elementsCount = formThree.elements.length;
+// 	paragraphFive.innerText = elementsCount;
+// }
+//
+// document.querySelector('.b-5').addEventListener('click', makeFive);
 
 //Задание 6
 //Найдите вторую форму на странице, используя document.forms и имя формы (которое вы знаете из задания 4)
 //Выведите на страницу количество элементов в форме, используя коллекцию form.elements
 
-function makeSix() {
-	const paragraphSix = document.getElementById('practicum6');
-	//Ваш код
-}
-
-document.querySelector('.b-6').addEventListener('click', makeSix);
+// function makeSix() {
+// 	const paragraphSix = document.getElementById('practicum6');
+// 	const formTwo = document.forms[1];
+// 	const elementsCount = formTwo.elements.length;
+// 	paragraphSix.innerText = elementsCount;
+// }
+//
+// document.querySelector('.b-6').addEventListener('click', makeSix);
 
 //Задание 7
 //Выведите перечисление названий (name) всех элементов второй формы на экран. В задании 6 вы нашли их количество.
