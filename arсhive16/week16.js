@@ -120,7 +120,13 @@
 
 function makeEight() {
 	const paragraphEight = document.getElementById('practicum8');
-	//Ваш код
+	let elementList = ''
+	const form = document.forms.formOne
+	for (element of form.elements) {
+		const name = form.getAttribute('name')
+		elementList += '- ' + name
+	}
+	paragraphEight.innerText = elementList
 }
 
 document.querySelector('.b-8').addEventListener('click', makeEight);
