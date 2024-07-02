@@ -102,12 +102,18 @@
 //- Внутри цикла добавьте текущее название элемента формы (свойство name) в elementsList, добавляя дефис перед названием
 //- После цикла выведите текст с перечислением элементов в элемент с id practicum7, используя свойство textContent
 
-function makeSeven() {
-	const paragraphSeven = document.getElementById('practicum7');
-	//Ваш код
-}
-
-document.querySelector('.b-7').addEventListener('click', makeSeven);
+// function makeSeven() {
+// 	const paragraphSeven = document.getElementById('practicum7');
+// 		let elementsList = '';
+// 		const form = document.forms.formTwo;
+// 		for(let element of form.elements) {
+// 			const name = element.getAttribute('name');
+// 			elementsList += ' -' + name;
+// 		}
+// 		paragraphSeven.textContent = elementsList;
+// 	}
+//
+// document.querySelector('.b-7').addEventListener('click', makeSeven);
 
 //Задание 8
 //Выведите перечисление названий (name) всех элементов первой формы на экран. В задании 5 вы нашли их количество.
