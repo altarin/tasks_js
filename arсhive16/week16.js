@@ -71,7 +71,7 @@
 //
 // function makeFive() {
 // 	const paragraphFive = document.getElementById('practicum5');
-// 	const formThree = document.forms[2];
+	const formThree = document.forms[2];
 // 	const elementsCount = formThree.elements.length;
 // 	paragraphFive.innerText = elementsCount;
 // }
@@ -118,31 +118,42 @@
 //Задание 8
 //Выведите перечисление названий (name) всех элементов первой формы на экран. В задании 5 вы нашли их количество.
 
-function makeEight() {
-		const paragraphEight = document.getElementById('practicum8');
-	const formElements = document.forms.formOne.elements;
-	let elementNames = ''
-	for (let element of formElements) {
-		const name = element.getAttribute('name');
-		if(elementNames === '') {
-			elementNames = name
-		}else {
-			elementNames += ', ' + name;
-		}
-	}
-	paragraphEight.textContent = elementNames;
-}
-makeEight()
-document.querySelector('.b-8').addEventListener('click', makeEight);
+// function makeEight() {
+// 		const paragraphEight = document.getElementById('practicum8');
+// 	const formElements = document.forms.formOne.elements;
+// 	let elementNames = ''
+// 	for (let element of formElements) {
+// 		const name = element.getAttribute('name');
+// 		if(elementNames === '') {
+// 			elementNames = name
+// 		}else {
+// 			elementNames += ', ' + name;
+// 		}
+// 	}
+// 	paragraphEight.textContent = elementNames;
+// }
+// makeEight()
+// document.querySelector('.b-8').addEventListener('click', makeEight);
 
 //Задание 9
 //Найдите третью форму на странице. Выведите перечисление названий (name) всех элементов формы на экран.
 
 function makeNine() {
 	const paragraphNine = document.getElementById('practicum9');
-	//Ваш код
+	const formElements = document.forms.formThree.elements;
+	let listElements = ' ';
+	for (let element of formElements) {
+		const name = element.getAttribute('name');
+		if (listElements === ' ') {
+			listElements = name;
+		}
+			else{
+				listElements += ', ' + name;
+			}
+		}
+	paragraphNine.innerText = listElements;
 }
-
+makeNine()
 document.querySelector('.b-9').addEventListener('click', makeNine);
 
 //Задание 10
