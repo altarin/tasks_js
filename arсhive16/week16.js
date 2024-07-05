@@ -16,8 +16,8 @@
 //
 // function makeTwo() {
 // 	const paragraphTwo = document.getElementById('practicum2');
-// 	const formOne = document.forms[0];
-// 	const name = formOne.getAttribute('name');
+	const formOne = document.forms[0];
+	// const name = formOne.getAttribute('name');
 // 	console.log(name);
 // }
 //
@@ -68,7 +68,7 @@
 //Найдите третью форму на странице, используя document.forms и имя формы (которое вы знаете из задания 4)
 //Выведите на страницу количество элементов в форме, используя коллекцию form.elements
 //Подсказка: используйте коллекцию document.forms для получения формы по индексу и свойство form.elements.length для получения количества элементов в форме
-
+//
 // function makeFive() {
 // 	const paragraphFive = document.getElementById('practicum5');
 // 	const formThree = document.forms[2];
@@ -119,16 +119,20 @@
 //Выведите перечисление названий (name) всех элементов первой формы на экран. В задании 5 вы нашли их количество.
 
 function makeEight() {
-	const paragraphEight = document.getElementById('practicum8');
-	let elementList = ''
-	const form = document.forms.formOne
-	for (element of form.elements) {
-		const name = form.getAttribute('name')
-		elementList += '- ' + name
+		const paragraphEight = document.getElementById('practicum8');
+	const formElements = document.forms.formOne.elements;
+	let elementNames = ''
+	for (let element of formElements) {
+		const name = element.getAttribute('name');
+		if(elementNames === '') {
+			elementNames = name
+		}else {
+			elementNames += ', ' + name;
+		}
 	}
-	paragraphEight.innerText = elementList
+	paragraphEight.textContent = elementNames;
 }
-
+makeEight()
 document.querySelector('.b-8').addEventListener('click', makeEight);
 
 //Задание 9
