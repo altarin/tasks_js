@@ -33,7 +33,7 @@
 
         <!-- возраст -->
         <div class="form_data">
-            <input type="age" name="age" value="" placeholder="Возраст" id="input-age">
+            <input type="age" name="age" value="" placeholder="Возраст" id="input-age" required>
         </div>
 
         <!-- пол -->
@@ -41,7 +41,7 @@
             <label>Выберите пол:</label>
             <input type="radio" id="male" name="male" value="male" />
             <label for="male">Мужской</label>
-            <input type="radio" id="female" name="female" value="female" />
+            <input type="radio" id="female" name="male" value="female" checked/>
             <label for="female">Женский</label>
         </div>
 
@@ -49,8 +49,8 @@
         <div class="choise">
             <label>Выберите профессию:</label>
             <select name="profession" size="1" required>
-                <option value="Programmer," selected="selected">Программист</option>
                 <option value="Doctor">Врач</option>
+                <option value="Programmer," selected="selected">Программист</option>
                 <option value="Teacher">Учитель</option>
                 <option value="Designer,">Дизайнер</option>
                 <option value="Engineer,">Инженер</option>
@@ -62,13 +62,18 @@
         <!-- пароль -->
         <h2>Придумайте пароль</h2>
         <div class="form_data">
-            <input type="password" name="password" value="" placeholder="Пароль" id="input-password" required>
+            <input type="password" name="password" value="" placeholder="Пароль" id="input-password" minlength="8" required>
         </div>
 
         <!-- повторный пароль -->
         <div class="form_data">
-            <input type="password" name="confirm" value="" placeholder="Повторите пароль" id="input-confirm"
+            <input type="password" name="confirm" value="" placeholder="Повторите пароль" id="input-confirm" minlength="8"
                    required>
+        </div>
+
+        <div>
+            <input type="checkbox" id="agreement" name="agreement" checked required/>
+            <label for="agreement">Согласие на обработку персональных данных</label>
         </div>
 
         <div class="form-btn">
