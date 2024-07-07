@@ -16,7 +16,7 @@
 //
 // function makeTwo() {
 // 	const paragraphTwo = document.getElementById('practicum2');
-	const formOne = document.forms[0];
+// 	const formOne = document.forms[0];
 	// const name = formOne.getAttribute('name');
 // 	console.log(name);
 // }
@@ -137,24 +137,24 @@
 
 //Задание 9
 //Найдите третью форму на странице. Выведите перечисление названий (name) всех элементов формы на экран.
-
-function makeNine() {
-	const paragraphNine = document.getElementById('practicum9');
-	const formElements = document.forms.formThree.elements;
-	let listElements = ' ';
-	for (let element of formElements) {
-		const name = element.getAttribute('name');
-		if (listElements === ' ') {
-			listElements = name;
-		}
-			else{
-				listElements += ', ' + name;
-			}
-		}
-	paragraphNine.innerText = listElements;
-}
-makeNine()
-document.querySelector('.b-9').addEventListener('click', makeNine);
+//
+// function makeNine() {
+// 	const paragraphNine = document.getElementById('practicum9');
+// 	const formElements = document.forms.formThree.elements;
+// 	let listElements = ' ';
+// 	for (let element of formElements) {
+// 		const name = element.getAttribute('name');
+// 		if (listElements === ' ') {
+// 			listElements = name;
+// 		}
+// 			else{
+// 				listElements += ', ' + name;
+// 			}
+// 		}
+// 	paragraphNine.innerText = listElements;
+// }
+// makeNine()
+// document.querySelector('.b-9').addEventListener('click', makeNine);
 
 //Задание 10
 //Выведите на экран значенеие radio кнопки третьей формы на странице
@@ -162,7 +162,9 @@ document.querySelector('.b-9').addEventListener('click', makeNine);
 
 function makeTen() {
 	const paragraphTen = document.getElementById('practicum10');
-	//Ваш код
+	const fourForm = document.forms.lastForm;
+	const radioBtn = fourForm.elements.fourthName;
+	paragraphTen.innerText = radioBtn.value;
 }
 
 document.querySelector('.b-10').addEventListener('click', makeTen);
