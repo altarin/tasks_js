@@ -330,10 +330,10 @@
 //- Добавьте слушатель события addEventListener на первую форму, как вы делали в задании 17
 //- В обработчике события вызовите метод event.preventDefault() для отмены отправки формы в случае ошибки
 
-const form = document.forms.formOne;
-const formReset = () => {
-	form.reset();
-}
+// const form = document.forms.formOne;
+// const formReset = () => {
+// 	form.reset();
+// }
 
 //Задание 19
 //При выборе определенной опции из выпадающего списка измените цвет фона страницы
@@ -343,9 +343,20 @@ const formReset = () => {
 //- В обработчике события, используя условные операторы (if), проверьте выбранную опцию
 //- В зависимости от выбранной опции, измените цвет фона страницы, используя свойство document.body.style.backgroundColor
 
-const selectElement = document.getElementById('colorSelector');
+const selectElement = document.getElementById('firstSelect');
 
-//Ващ код
+const formsContainer = document.querySelector('.container');
+
+const changeColor = () => {
+	if(selectElement.value === 'Опция 1'){
+		formsContainer.style.backgroundColor = 'red'
+	} else if(selectElement.value === 'Опция 2'){
+		formsContainer.style.backgroundColor = 'green'
+	} else {
+		formsContainer.style.backgroundColor = 'blue'
+	}
+}
+changeColor()
 
 //Задание 20
 //Добавьте валидацию для поля Email
