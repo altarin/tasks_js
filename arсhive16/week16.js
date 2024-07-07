@@ -291,13 +291,13 @@
 //- Используйте свойство checked элемента checkbox, чтобы установить его выбранным по умолчанию
 //- Установите значение checked равным true для выбранного варианта
 
-function makeSixteen() {
-	const form = document.forms.formTwo;
-	const checkbox = form.elements.checkboxThree;
-	checkbox.checked = true;
-}
-
-makeSixteen();
+// function makeSixteen() {
+// 	const form = document.forms.formTwo;
+// 	const checkbox = form.elements.checkboxThree;
+// 	checkbox.checked = true;
+// }
+//
+// makeSixteen();
 
 //Задание 17
 //Проверьте, заполнены ли все поля первой формы перед отправкой
@@ -309,12 +309,18 @@ makeSixteen();
 //- Добавьте слушатель события submit к форме, чтобы выполнить проверку перед отправкой
 //- В обработчике события вызовите метод event.preventDefault() для отмены отправки формы в случае ошибки
 
-formOne.addEventListener('submit', function (event) {
-	event.preventDefault(); //Отмена отправки
-
+const formOneSubmit = () => {
+	const paragraphError = document.querySelector('#errorMessage');
+	paragraphError.textContent = '';
 	const formOne = document.forms.formOne;
-	//Ваш код
-});
+	const elements = formOne.elements;
+	if(elements.firstName.value === '') {
+		paragraphError.textContent = 'Введите имя'
+	} else if (elements.firstEmail.value === '') {
+		paragraphError.textContent = 'Введите почту'
+	}
+}
+formOneSubmit()
 
 //Задание 18
 //Очистите все поля первой формы после отправки
