@@ -62,8 +62,6 @@
 // }
 // document.querySelector('.b-4').addEventListener('click', makeFour);
 
-
-
 //Задание 5
 //Найдите третью форму на странице, используя document.forms и имя формы (которое вы знаете из задания 4)
 //Выведите на страницу количество элементов в форме, используя коллекцию form.elements
@@ -71,7 +69,7 @@
 //
 // function makeFive() {
 // 	const paragraphFive = document.getElementById('practicum5');
-	const formThree = document.forms[2];
+// 	const formThree = document.forms[2];
 // 	const elementsCount = formThree.elements.length;
 // 	paragraphFive.innerText = elementsCount;
 // }
@@ -160,14 +158,14 @@
 //Выведите на экран значенеие radio кнопки третьей формы на странице
 //Подсказка: используйте коллекцию document.forms для доступа к формам, свойство elements для доступа к элементам формы и свойство value для получения значения radio кнопки
 
-function makeTen() {
-	const paragraphTen = document.getElementById('practicum10');
-	const fourForm = document.forms.lastForm;
-	const radioBtn = fourForm.elements.fourthName;
-	paragraphTen.innerText = radioBtn.value;
-}
-
-document.querySelector('.b-10').addEventListener('click', makeTen);
+// function makeTen() {
+// 	const paragraphTen = document.getElementById('practicum10');
+// 	const fourForm = document.forms.lastForm;
+// 	const radioBtn = fourForm.elements.fourthName;
+// 	paragraphTen.innerText = radioBtn.value;
+// }
+//
+// document.querySelector('.b-10').addEventListener('click', makeTen);
 
 //Задание 11
 //Выведите значения всех опций из первой формы
@@ -179,23 +177,23 @@ document.querySelector('.b-10').addEventListener('click', makeTen);
 //- Внутри цикла получите значение каждой опции с помощью свойства value и добавьте его в optionsValues
 //- Выведите значения опций на страницу
 
-
-function makeEleven() {
-	const paragraphEleven = document.getElementById('practicum11');
-	const formOne = document.forms.formOne;
-	const select = formOne.elements.firstSelect;
-	let optionsValues = '';
-	for (let option of select) {
-		if(optionsValues === '') {
-			optionsValues += option.value
-		} else {
-				optionsValues += ', ' + option.value;
-			}
-		}
-paragraphEleven.textContent = optionsValues;
-}
-
-document.querySelector('.b-11').addEventListener('click', makeEleven);
+//
+// function makeEleven() {
+// 	const paragraphEleven = document.getElementById('practicum11');
+// 	const formOne = document.forms.formOne;
+// 	const select = formOne.elements.firstSelect;
+// 	let optionsValues = '';
+// 	for (let option of select) {
+// 		if(optionsValues === '') {
+// 			optionsValues += option.value
+// 		} else {
+// 				optionsValues += ', ' + option.value;
+// 			}
+// 		}
+// paragraphEleven.textContent = optionsValues;
+// }
+//
+// document.querySelector('.b-11').addEventListener('click', makeEleven);
 
 //Задание 12
 //Выведите значения атрибутов id всех чекбоксов (количество: 3) из второй формы
@@ -206,7 +204,14 @@ document.querySelector('.b-11').addEventListener('click', makeEleven);
 
 function makeTwelve() {
 	const paragraphTwelve = document.getElementById('practicum12');
-	//Ваш код
+	const ids = [];
+	const elements = document.forms.formTwo.elements;
+	for (let element of elements) {
+		if(element.type === 'checkbox') {
+			ids.push(element.id);
+		}
+	}
+	paragraphTwelve.textContent = ids.join(', ');
 }
 
 document.querySelector('.b-12').addEventListener('click', makeTwelve);
