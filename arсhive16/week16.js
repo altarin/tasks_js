@@ -501,3 +501,12 @@ const selectFormThree = document.getElementById('firstSelect');
 selectFormThree.addEventListener('change', function () {
 	//Ваш код
 });
+
+
+// // Заполни поля третьей формы.	Получи значения полей ввода и выведи их через запятую в элементе с id "practicum"
+// const nameValue = document.querySelector('#thirdName').value
+// const emailValue = document.querySelector('#thirdEmail').value
+// const showFields = (nameValue, emailValue) => {
+// 	document.getElementById('practicum').textContent = nameValue + ', ' + emailValue
+// }
+// showFields(nameValue, emailValue)
