@@ -225,18 +225,18 @@
 //- Если кнопка выбрана, выведите сообщение "Кнопка выбрана" на страницу
 //- Если кнопка не выбрана, выведите сообщение "Кнопка не выбрана" на страницу
 
-function checkButton(e) {
-	e.preventDefault();
-
-	const paragraphThirteen = document.getElementById('practicum13');
-	const form = document.forms.lastForm;
-	const radioBtn = form.elements.fourthName;
-	paragraphThirteen.textContent = radioBtn.checked
-		? "Кнопка выбрана"
-		: "Кнопка не выбрана"
-}
-
-document.querySelector('.b-13').addEventListener('click', checkButton);
+// function checkButton(e) {
+// 	e.preventDefault();
+//
+// 	const paragraphThirteen = document.getElementById('practicum13');
+// 	const form = document.forms.lastForm;
+// 	const radioBtn = form.elements.fourthName;
+// 	paragraphThirteen.textContent = radioBtn.checked
+// 		? "Кнопка выбрана"
+// 		: "Кнопка не выбрана"
+// }
+//
+// document.querySelector('.b-13').addEventListener('click', checkButton);
 
 //Задание 14
 //Выведите на экран название выбранного варианта в первой форме
@@ -249,7 +249,17 @@ document.querySelector('.b-13').addEventListener('click', checkButton);
 
 function checkOption() {
 	const paragraphFourteen = document.getElementById('practicum14');
-	//Ваш код
+	const form = document.forms.formOne
+	const select = form.elements.firstSelect
+	select.selectedIndex = 1
+	const optionValue = select[1].value
+	if(optionValue === 'Опция 1') {
+		paragraphFourteen.textContent = 'Выбран первый вариант'
+	} else if (optionValue === 'Опция 2') {
+		paragraphFourteen.textContent = 'Выбран второй вариант'
+	} else {
+		paragraphFourteen.textContent = 'Выбран третий вариант'
+	}
 }
 
 document.querySelector('.b-14').addEventListener('click', checkOption);
