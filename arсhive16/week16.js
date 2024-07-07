@@ -247,22 +247,22 @@
 //- Используйте свойство value выбранной опции для получения выбранного варианта
 //- Напишите проверку, которая используя условный оператор (if) будет выводить в элемент paragraphFourteen название выбранного варианта
 
-function checkOption() {
-	const paragraphFourteen = document.getElementById('practicum14');
-	const form = document.forms.formOne
-	const select = form.elements.firstSelect
-	select.selectedIndex = 1
-	const optionValue = select[1].value
-	if(optionValue === 'Опция 1') {
-		paragraphFourteen.textContent = 'Выбран первый вариант'
-	} else if (optionValue === 'Опция 2') {
-		paragraphFourteen.textContent = 'Выбран второй вариант'
-	} else {
-		paragraphFourteen.textContent = 'Выбран третий вариант'
-	}
-}
-
-document.querySelector('.b-14').addEventListener('click', checkOption);
+// function checkOption() {
+// 	const paragraphFourteen = document.getElementById('practicum14');
+// 	const form = document.forms.formOne
+// 	const select = form.elements.firstSelect
+// 	select.selectedIndex = 1
+// 	const optionValue = select[1].value
+// 	if(optionValue === 'Опция 1') {
+// 		paragraphFourteen.textContent = 'Выбран первый вариант'
+// 	} else if (optionValue === 'Опция 2') {
+// 		paragraphFourteen.textContent = 'Выбран второй вариант'
+// 	} else {
+// 		paragraphFourteen.textContent = 'Выбран третий вариант'
+// 	}
+// }
+//
+// document.querySelector('.b-14').addEventListener('click', checkOption);
 
 //Задание 15
 //Добавьте в первую форму выбранную Опцию 3 по умолчанию
@@ -273,7 +273,12 @@ document.querySelector('.b-14').addEventListener('click', checkOption);
 //- Установите значение selectedIndex равным индексу опции, которую вы хотите выбрать по умолчанию
 
 function makeFifteen() {
-	//Ваш код
+	// const paragraphFifteen = document.getElementById('practicum15');
+	const form = document.forms.formOne;
+	const select = form.elements.firstSelect;
+	select.selectedIndex = 0;
+	const index = select.selectedIndex;
+	// paragraphFifteen.textContent = `Индекс по умолчанию - ${index}`;
 }
 
 makeFifteen();
