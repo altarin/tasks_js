@@ -405,23 +405,33 @@
 
 //Задание 22
 //При отправке третьей формы выполните проверку поля Имя на заполненность. Если поле Имя пустое, отмените отправку формы и выведите сообщение об ошибке в элементе с id "result22".
+//
+// document.querySelector('.b-22').onclick = function (event) {
+// 	const formSubmit = () => {
+// 		const formThreeName = document.forms.formThree.elements.thirdName
+// 		if (formThreeName.value === ''){
+// 			result22.textContent = "Введите имя!"
+// 		} else {
+// 			result22.textContent = "Проверка пройдена"
+// 		}
+// 	}
+//
+// 	formSubmit();
+// };
 
-document.querySelector('.b-22').onclick = function (event) {
-	const formSubmit = () => {
-		const formThreeName = document.forms.formThree.elements.thirdName
-		if (formThreeName.value === ''){
-			result22.textContent = "Введите имя!"
-		} else {
-			result22.textContent = "Проверка пройдена"
-		}
-	}
-
-	formSubmit();
-};
-
-//Задание 23
+//Задание 23 (!)
 //При выборе опции "Я хочу зарегистрироваться" в четвёртой форме кнопка должна быть разблокирована. В противном случае, сделайте кнопку отправки формы заблокированной.
 //Подсказка: используйте свойство disabled
+const formSubmit = () => {
+	const btn = document.forms.lastForm.elements.fourthButton;
+	const radioBtn = lastForm.elements.fourthName;
+	if (!radioBtn.checked) {
+		btn.disabled = true
+	} else {
+		btn.disabled = false
+	}
+}
+formSubmit()
 
 //Задание 24
 //Найдите все поля ввода на странице (querySelectorAll) и установите им атрибут "placeholder" со значением "Введите данные" (используйте метод forEach).
