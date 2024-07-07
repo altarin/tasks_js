@@ -367,32 +367,41 @@
 //- В обработчике события, используя регулярное выражение (RegExp: /^[^\s@]+@[^\s@]+.[^\s@]+$/), проверьте введенное значение поля Email
 //- В зависимости от результата проверки, измените стиль поля Email (например, установите класс с ошибкой) и отобразите сообщение об ошибке в элементе <p> (добавьте элемент самостоятельно) с помощью свойства textContent.
 
-const emailInput = document.forms.formOne.elements.firstEmail;
-const errorMessage = document.getElementById('errorMessage');
-
-const mailValidation = () => {
-	const regex = /^[^\s@]+@[^\s@]+.[^\s@]+$/
-	if(!regex.test(emailInput.value)) {
-		emailInput.style.border = '2px solid red'
-		errorMessage.textContent = 'Некорректный email'
-	}else {
-		errorMessage.textContent = ''
-		emailInput.style.border = ''
-	}
-}
-mailValidation()
+// const emailInput = document.forms.formOne.elements.firstEmail;
+// const errorMessage = document.getElementById('errorMessage');
+//
+// const mailValidation = () => {
+// 	const regex = /^[^\s@]+@[^\s@]+.[^\s@]+$/
+// 	if(!regex.test(emailInput.value)) {
+// 		emailInput.style.border = '2px solid red'
+// 		errorMessage.textContent = 'Некорректный email'
+// 	}else {
+// 		errorMessage.textContent = ''
+// 		emailInput.style.border = ''
+// 	}
+// }
+// mailValidation()
 
 //Задание 21
 //При отправке второй формы выполните проверку всех чекбоксов. Если ни один из чекбоксов не выбран, отмените отправку формы и выведите сообщение об ошибке в элементе с id "result21".
 
-document.forms.formTwo.addEventListener('submit', function (evt) {
-	evt.preventDefault();
-
-	const checkbox1 = document.getElementById('checkbox1').checked;
-	const checkbox2 = document.getElementById('checkbox2').checked;
-	const checkbox3 = document.getElementById('checkbox3').checked;
-	//Ваш код
-});
+// const formSubmit = () => {
+// 	const checkboxes = document.forms.formTwo.querySelectorAll('input[type="checkbox"]')
+// 	let isChecked = false
+//
+// 	checkboxes.forEach(function (checkbox) {
+// 		if (checkbox.checked) {
+// 			isChecked = true;
+// 		}
+// 	})
+//
+// 	if (!isChecked) {
+// 		document.getElementById('practicum21').textContent = 'Проверка не пройдена'
+// 	} else {
+// 		document.getElementById('practicum21').textContent = 'Проверка пройдена'
+// 	}
+// }
+// formSubmit()
 
 //Задание 22
 //При отправке третьей формы выполните проверку поля Имя на заполненность. Если поле Имя пустое, отмените отправку формы и выведите сообщение об ошибке в элементе с id "result22".
