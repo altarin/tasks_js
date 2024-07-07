@@ -202,19 +202,19 @@
 //- Получите доступ к чекбоксам с помощью form.elements и сохраните их в переменные
 //- Получите значения атрибутов id всех чекбоксов второй формы
 
-function makeTwelve() {
-	const paragraphTwelve = document.getElementById('practicum12');
-	const ids = [];
-	const elements = document.forms.formTwo.elements;
-	for (let element of elements) {
-		if(element.type === 'checkbox') {
-			ids.push(element.id);
-		}
-	}
-	paragraphTwelve.textContent = ids.join(', ');
-}
-
-document.querySelector('.b-12').addEventListener('click', makeTwelve);
+// function makeTwelve() {
+// 	const paragraphTwelve = document.getElementById('practicum12');
+// 	const ids = [];
+// 	const elements = document.forms.formTwo.elements;
+// 	for (let element of elements) {
+// 		if(element.type === 'checkbox') {
+// 			ids.push(element.id);
+// 		}
+// 	}
+// 	paragraphTwelve.textContent = ids.join(', ');
+// }
+//
+// document.querySelector('.b-12').addEventListener('click', makeTwelve);
 
 // Задание 13
 //Проверьте была ли выбрана кнопка четвёртой формы
@@ -229,7 +229,11 @@ function checkButton(e) {
 	e.preventDefault();
 
 	const paragraphThirteen = document.getElementById('practicum13');
-	//Ваш код
+	const form = document.forms.lastForm;
+	const radioBtn = form.elements.fourthName;
+	paragraphThirteen.textContent = radioBtn.checked
+		? "Кнопка выбрана"
+		: "Кнопка не выбрана"
 }
 
 document.querySelector('.b-13').addEventListener('click', checkButton);
