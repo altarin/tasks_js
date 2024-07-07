@@ -407,8 +407,16 @@
 //При отправке третьей формы выполните проверку поля Имя на заполненность. Если поле Имя пустое, отмените отправку формы и выведите сообщение об ошибке в элементе с id "result22".
 
 document.querySelector('.b-22').onclick = function (event) {
-	const nameInput = document.forms.formThree.elements.thirdName;
-	//Ваш код
+	const formSubmit = () => {
+		const formThreeName = document.forms.formThree.elements.thirdName
+		if (formThreeName.value === ''){
+			result22.textContent = "Введите имя!"
+		} else {
+			result22.textContent = "Проверка пройдена"
+		}
+	}
+
+	formSubmit();
 };
 
 //Задание 23
