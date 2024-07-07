@@ -343,20 +343,20 @@
 //- В обработчике события, используя условные операторы (if), проверьте выбранную опцию
 //- В зависимости от выбранной опции, измените цвет фона страницы, используя свойство document.body.style.backgroundColor
 
-const selectElement = document.getElementById('firstSelect');
-
-const formsContainer = document.querySelector('.container');
-
-const changeColor = () => {
-	if(selectElement.value === 'Опция 1'){
-		formsContainer.style.backgroundColor = 'red'
-	} else if(selectElement.value === 'Опция 2'){
-		formsContainer.style.backgroundColor = 'green'
-	} else {
-		formsContainer.style.backgroundColor = 'blue'
-	}
-}
-changeColor()
+// const selectElement = document.getElementById('firstSelect');
+//
+// const formsContainer = document.querySelector('.container');
+//
+// const changeColor = () => {
+// 	if(selectElement.value === 'Опция 1'){
+// 		formsContainer.style.backgroundColor = 'red'
+// 	} else if(selectElement.value === 'Опция 2'){
+// 		formsContainer.style.backgroundColor = 'green'
+// 	} else {
+// 		formsContainer.style.backgroundColor = 'blue'
+// 	}
+// }
+// changeColor()
 
 //Задание 20
 //Добавьте валидацию для поля Email
@@ -370,7 +370,17 @@ changeColor()
 const emailInput = document.forms.formOne.elements.firstEmail;
 const errorMessage = document.getElementById('errorMessage');
 
-//Ваш код
+const mailValidation = () => {
+	const regex = /^[^\s@]+@[^\s@]+.[^\s@]+$/
+	if(!regex.test(emailInput.value)) {
+		emailInput.style.border = '2px solid red'
+		errorMessage.textContent = 'Некорректный email'
+	}else {
+		errorMessage.textContent = ''
+		emailInput.style.border = ''
+	}
+}
+mailValidation()
 
 //Задание 21
 //При отправке второй формы выполните проверку всех чекбоксов. Если ни один из чекбоксов не выбран, отмените отправку формы и выведите сообщение об ошибке в элементе с id "result21".
