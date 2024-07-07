@@ -272,16 +272,16 @@
 //- Используйте свойство selectedIndex элемента select, чтобы установить выбранный индекс опции по умолчанию
 //- Установите значение selectedIndex равным индексу опции, которую вы хотите выбрать по умолчанию
 
-function makeFifteen() {
-	// const paragraphFifteen = document.getElementById('practicum15');
-	const form = document.forms.formOne;
-	const select = form.elements.firstSelect;
-	select.selectedIndex = 0;
-	const index = select.selectedIndex;
-	// paragraphFifteen.textContent = `Индекс по умолчанию - ${index}`;
-}
-
-makeFifteen();
+// function makeFifteen() {
+// 	// const paragraphFifteen = document.getElementById('practicum15');
+// 	const form = document.forms.formOne;
+// 	const select = form.elements.firstSelect;
+// 	select.selectedIndex = 0;
+// 	const index = select.selectedIndex;
+// 	// paragraphFifteen.textContent = `Индекс по умолчанию - ${index}`;
+// }
+//
+// makeFifteen();
 
 //Задание 16
 //Добавьте во вторую форму выбранный Вариант 3 по умолчанию
@@ -292,7 +292,9 @@ makeFifteen();
 //- Установите значение checked равным true для выбранного варианта
 
 function makeSixteen() {
-	//Ваш код
+	const form = document.forms.formTwo;
+	const checkbox = form.elements.checkboxThree;
+	checkbox.checked = true;
 }
 
 makeSixteen();
