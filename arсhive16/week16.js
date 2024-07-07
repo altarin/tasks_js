@@ -179,9 +179,20 @@ document.querySelector('.b-10').addEventListener('click', makeTen);
 //- Внутри цикла получите значение каждой опции с помощью свойства value и добавьте его в optionsValues
 //- Выведите значения опций на страницу
 
+
 function makeEleven() {
 	const paragraphEleven = document.getElementById('practicum11');
-	//Ваш код
+	const formOne = document.forms.formOne;
+	const select = formOne.elements.firstSelect;
+	let optionsValues = '';
+	for (let option of select) {
+		if(optionsValues === '') {
+			optionsValues += option.value
+		} else {
+				optionsValues += ', ' + option.value;
+			}
+		}
+paragraphEleven.textContent = optionsValues;
 }
 
 document.querySelector('.b-11').addEventListener('click', makeEleven);
