@@ -450,13 +450,24 @@
 //Задание 25
 //При фокусе на любом поле ввода измените его границу на цвет "#00ff00". При потере фокуса восстановите стандартную границу.
 
-document.querySelector('.b-25').addEventListener('click', function () {
-	const inputs = document.querySelectorAll('input');
-
-	inputs.forEach(function (input) {
-		//Ваш код
-	});
-});
+// document.querySelector('.b-25').addEventListener('click', function () {
+// 	const setColor = () => {
+// 		const inputs = document.querySelectorAll('.form__input')
+//
+// 		inputs.forEach(function (input) {
+// 			input.addEventListener('focus', function () {
+// 				input.style.outline = 'none'
+// 				input.style.border = '1px solid #00ff00'
+// 			})
+//
+// 			input.addEventListener('blur', function () {
+// 				input.style.border = ''
+// 			})
+// 		})
+// 	}
+//
+// 	setColor()
+// });
 
 //Задание 26
 //При нажатии на кнопку "Задание 26" отобразите в элементе с id "result26" значение placeholder из поля имя в третьей форме
