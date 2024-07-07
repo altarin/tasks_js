@@ -472,10 +472,15 @@
 //Задание 26
 //При нажатии на кнопку "Задание 26" отобразите в элементе с id "result26" значение placeholder из поля имя в третьей форме
 
-document.querySelector('.b-26').addEventListener('click', function (event) {
-	event.preventDefault();
-	//Ваш код
-});
+// document.querySelector('.b-26').addEventListener('click', function (event) {
+// 	event.preventDefault();
+// 	const showPlaceholder = () => {
+// 		const nameField = document.forms.formThree.elements.thirdName
+// 		const paragraph = document.getElementById('practicum')
+// 		paragraph.textContent = nameField.placeholder
+// 	}
+// 	showPlaceholder()
+// });
 
 //Задание 27
 //При изменении значения любого из полей второй формы отобразите сообщение с текстом "Изменение внесено" в элементе с id "result27"
