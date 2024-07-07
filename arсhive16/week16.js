@@ -422,23 +422,30 @@
 //Задание 23 (!)
 //При выборе опции "Я хочу зарегистрироваться" в четвёртой форме кнопка должна быть разблокирована. В противном случае, сделайте кнопку отправки формы заблокированной.
 //Подсказка: используйте свойство disabled
-const formSubmit = () => {
-	const btn = document.forms.lastForm.elements.fourthButton;
-	const radioBtn = lastForm.elements.fourthName;
-	if (!radioBtn.checked) {
-		btn.disabled = true
-	} else {
-		btn.disabled = false
-	}
-}
-formSubmit()
+// const formSubmit = () => {
+// 	const btn = document.forms.lastForm.elements.fourthButton;
+// 	const radioBtn = lastForm.elements.fourthName;
+// 	if (!radioBtn.checked) {
+// 		btn.disabled = true
+// 	} else {
+// 		btn.disabled = false
+// 	}
+// }
+// formSubmit()
 
 //Задание 24
 //Найдите все поля ввода на странице (querySelectorAll) и установите им атрибут "placeholder" со значением "Введите данные" (используйте метод forEach).
 
-document.querySelector('.b-24').addEventListener('click', function () {
-	//Ваш код
-});
+// document.querySelector('.b-24').addEventListener('click', function () {
+// 	const setPlaceholder = () => {
+// 		const inputFields = document.querySelectorAll('.form__input')
+//
+// 		inputFields.forEach(function(input) {
+// 			input.setAttribute('placeholder', 'Введите данные')
+// 		})
+// 	}
+// 	setPlaceholder()
+// });
 
 //Задание 25
 //При фокусе на любом поле ввода измените его границу на цвет "#00ff00". При потере фокуса восстановите стандартную границу.
