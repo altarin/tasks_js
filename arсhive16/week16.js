@@ -309,18 +309,18 @@
 //- Добавьте слушатель события submit к форме, чтобы выполнить проверку перед отправкой
 //- В обработчике события вызовите метод event.preventDefault() для отмены отправки формы в случае ошибки
 
-const formOneSubmit = () => {
-	const paragraphError = document.querySelector('#errorMessage');
-	paragraphError.textContent = '';
-	const formOne = document.forms.formOne;
-	const elements = formOne.elements;
-	if(elements.firstName.value === '') {
-		paragraphError.textContent = 'Введите имя'
-	} else if (elements.firstEmail.value === '') {
-		paragraphError.textContent = 'Введите почту'
-	}
-}
-formOneSubmit()
+// const formOneSubmit = () => {
+// 	const paragraphError = document.querySelector('#errorMessage');
+// 	paragraphError.textContent = '';
+// 	const formOne = document.forms.formOne;
+// 	const elements = formOne.elements;
+// 	if(elements.firstName.value === '') {
+// 		paragraphError.textContent = 'Введите имя'
+// 	} else if (elements.firstEmail.value === '') {
+// 		paragraphError.textContent = 'Введите почту'
+// 	}
+// }
+// formOneSubmit()
 
 //Задание 18
 //Очистите все поля первой формы после отправки
@@ -330,7 +330,10 @@ formOneSubmit()
 //- Добавьте слушатель события addEventListener на первую форму, как вы делали в задании 17
 //- В обработчике события вызовите метод event.preventDefault() для отмены отправки формы в случае ошибки
 
-//Ваш код
+const form = document.forms.formOne;
+const formReset = () => {
+	form.reset();
+}
 
 //Задание 19
 //При выборе определенной опции из выпадающего списка измените цвет фона страницы
