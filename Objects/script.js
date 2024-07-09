@@ -158,3 +158,23 @@ console.log(rectangle)
 // -----------------------------------------------------------------------------------------------------------------
 
 // 6
+// Добавьте в класс Rectangle метод getArea, который будет возвращать площадь прямоугольника
+// (произведение ширины и высоты). Создайте объект rectangle на основе класса Rectangle и
+// выведите его площадь в консоль с помощью метода getArea.
+
+class Rectangle {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+        this.getArea();
+    }
+    getArea(){
+        return this.width * this.height;
+    }
+}
+const rectangle = new Rectangle();
+console.log(rectangle.getArea());
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// 7
