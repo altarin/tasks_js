@@ -118,3 +118,28 @@ console.log(car2);
 
 
 // 4
+// Добавьте в класс Car метод getAge, который будет возвращать возраст машины
+// (текущий год минус год выпуска,текущий год нужно получить через клас Date).
+// Создайте объект car2 на основе класса Car и выведите его возраст в консоль с помощью метода getAge.
+// Результат в консоли должен быть типом данных numbers.
+
+class Car {
+    constructor(brand, model, year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+        this.getAge();
+    }
+    getAge(){
+        const nowYears = new Date().getFullYear();
+        return nowYears - this.year;
+    }
+}
+
+const car = new Car('BMW','X6',2023);
+console.log(car.getAge());
+
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// 5
