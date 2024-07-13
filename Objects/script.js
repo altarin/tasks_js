@@ -316,4 +316,32 @@ class BankAccount{
     }
   }
   const account = new BankAccount(324234,534554)
-  console.log(account.deposit); 
+  console.log(account.deposit()); 
+
+//   ----------------------------------------------------------------------------------------------------------------------------
+
+
+// 15
+
+// В класс BankAccount добавлен метод withdraw, который уменьшает баланс на заданную сумму. Если запрошенная сумма превышает 
+// текущий баланс, выведите сообщение "Недостаточно средств". Создайте объект account на основе класса BankAccount, 
+// попробуйте снять с него сумму, превышающую баланс, и выведите соответствующее сообщение в консоль.
+
+class BankAccount {
+  constructor(accountNumber, balance) {
+    this.accountNumber = accountNumber;
+    this.balance = balance;
+  }
+  deposit(sum) {
+    this.balance = sum + this.balance;
+  }
+    withdraw(amount) {
+      if (amount <= this.balance) {
+        this.balance -= amount;
+      } else {
+       console.log('Недостаточно средств');
+      }
+    }
+}
+const bankAccount = new BankAccount(324234, 534554);
+account.withdraw(555486);
