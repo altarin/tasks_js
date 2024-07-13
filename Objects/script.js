@@ -369,17 +369,17 @@
 // Добавьте в класс Animal метод makeSound, который будет выводить в консоль звук животного. 
 // Создайте объект animal на основе класса Animal и вызовите метод makeSound.
 
-class Animal {
-  constructor(name, sound) {
-    this.name = name;
-    this.sound = sound;
-  }
-  makeSound(){
-    return 'rrr';
-  }
-}
-const animal = new Animal();
-console.log(animal.makeSound());
+// class Animal {
+//   constructor(name, sound) {
+//     this.name = name;
+//     this.sound = sound;
+//   }
+//   makeSound(){
+//     return 'rrr';
+//   }
+// }
+// const animal = new Animal();
+// console.log(animal.makeSound());
 
 
 // ----------------------------------------------------------------------------------------------------------------
@@ -387,3 +387,19 @@ console.log(animal.makeSound());
 // 18
 // Создайте класс Point. Класс должен содержать свойства x и y.
 //  Создайте на его основе объект point и выведите его свойства в консоль.
+
+class Point{
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+}
+const point = new Point(3, 6);
+console.log(point);
+
+
+// --------------------------------------------------------------------------------------------------------------
+
+// 19
+// В классе Point добавлен метод getDistance, который будет возвращать расстояние от точки до начала координат (0,0). 
+// Создайте объект point на основе класса Point и выведите его расстояние до начала координат с помощью метода getDistance.
