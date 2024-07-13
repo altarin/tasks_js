@@ -456,3 +456,23 @@
 // Создайте класс Person. Класс должен содержать свойства name, age и city. Создайте на его основе объект person.
 //  Cоздайте переменную personInfo и в нее поместите строчку, в которой будет вся информация из обьекта. 
 //  Должно получиться: 'Josh, 43, London' и выведите personInfo в консоль
+
+class Person {
+  constructor(name, age, city) {
+    this.name = name;
+    this.age = age;
+    this.city = city;
+  }
+}
+const person = new Person("Josh", 43, "london");
+const personInfo = `${person.name},${person.age},${person.city}`;
+console.log(personInfo);
+
+// ----------------------------------------------------------------------------------------------------------
+
+// 22
+
+// Добавьте в класс Person метод changeCity, который будет изменять значение свойства city на новое значение.
+//  Создайте объект person на основе класса Person, вызовите метод changeCity с аргументом "New York" 
+//  и выведите новое значение свойства city в консоль.
+
