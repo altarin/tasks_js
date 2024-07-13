@@ -426,26 +426,33 @@
 //  Создайте объект calc на основе класса Calculator и выполните следующее математическое
 //   выражение: (((2+2)-1)*4)\2 с помощью методов. Результат вывести в консоль.
 
-class Calculator {
-  add(num1, num2) {
-    return num1 + num2;
-  }
-  subtract(num1, num2) {
-    return num1 - num2;
-  }
-  multiply(num1, num2) {
-    return num1 * num2;
-  }
-  divide(num1, num2) {
-    return num1 / num2;
-  }
-}
-//длинный вариант.
-const calc = new Calculator();
-const addResult = calc.add(2, 2);
-const subtractResult = calc.subtract(addResult, 1);
-const multiplyResult = calc.multiply(subtractResult, 4);
-const divideResult = calc.divide(multiplyResult, 2);
-console.log(divideResult);
-///сокращенный вариант.
+// class Calculator {
+//   add(num1, num2) {
+//     return num1 + num2;
+//   }
+//   subtract(num1, num2) {
+//     return num1 - num2;
+//   }
+//   multiply(num1, num2) {
+//     return num1 * num2;
+//   }
+//   divide(num1, num2) {
+//     return num1 / num2;
+//   }
+// }
+// //длинный вариант.
+// const calc = new Calculator();
+// const addResult = calc.add(2, 2);
+// const subtractResult = calc.subtract(addResult, 1);
+// const multiplyResult = calc.multiply(subtractResult, 4);
+// const divideResult = calc.divide(multiplyResult, 2);
+// console.log(divideResult);
+// ///сокращенный вариант.
 ///console.log(calc.divide(calc.multiply(calc.subtract(calc.add(2, 2), 1), 4), 2));
+
+// ---------------------------------------------------------------------------------------------------------
+
+// 21
+// Создайте класс Person. Класс должен содержать свойства name, age и city. Создайте на его основе объект person.
+//  Cоздайте переменную personInfo и в нее поместите строчку, в которой будет вся информация из обьекта. 
+//  Должно получиться: 'Josh, 43, London' и выведите personInfo в консоль
