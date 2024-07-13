@@ -306,17 +306,17 @@
 // Создайте объект account на основе класса BankAccount, пополните его баланс с помощью метода deposit и выведите новый баланс в консоль.
 
 
-class BankAccount{
-    constructor(accountNumber,balance){
-      this.accountNumber = accountNumber
-      this.balance = balance
-    }
-    deposit() {
-        return this.accountNumber + this.balance;
-    }
-  }
-  const account = new BankAccount(324234,534554)
-  console.log(account.deposit()); 
+// class BankAccount{
+  //   constructor(accountNumber,balance){
+  //     this.accountNumber = accountNumber
+  //     this.balance = balance
+  //   }
+  //   deposit() {
+  //       return this.accountNumber + this.balance;
+  //   }
+  // }
+  // const account = new BankAccount(324234,534554)
+  // console.log(account.deposit()); 
 
 //   ----------------------------------------------------------------------------------------------------------------------------
 
@@ -327,21 +327,37 @@ class BankAccount{
 // текущий баланс, выведите сообщение "Недостаточно средств". Создайте объект account на основе класса BankAccount, 
 // попробуйте снять с него сумму, превышающую баланс, и выведите соответствующее сообщение в консоль.
 
-class BankAccount {
-  constructor(accountNumber, balance) {
-    this.accountNumber = accountNumber;
-    this.balance = balance;
+// class BankAccount {
+  // constructor(accountNumber, balance) {
+    // this.accountNumber = accountNumber;
+//     this.balance = balance;
+//   }
+//   deposit(sum) {
+//     this.balance = sum + this.balance;
+//   }
+//     withdraw(amount) {
+//       if (amount <= this.balance) {
+//         this.balance -= amount;
+//       } else {
+//        console.log('Недостаточно средств');
+//       }
+//     }
+// }
+// const bankAccount = new BankAccount(324234, 534554);
+// account.withdraw(555486);
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// 16
+
+// Создайте класс Animal. Класс должен содержать свойства name и sound. 
+// Создайте на его основе объект animal и выведите его свойства в консоль.
+
+class Animal {
+  constructor(name, sound) {
+    this.name = name;
+    this.sound = sound;
   }
-  deposit(sum) {
-    this.balance = sum + this.balance;
-  }
-    withdraw(amount) {
-      if (amount <= this.balance) {
-        this.balance -= amount;
-      } else {
-       console.log('Недостаточно средств');
-      }
-    }
 }
-const bankAccount = new BankAccount(324234, 534554);
-account.withdraw(555486);
+const animal = new Animal('Cat', 'purrr');
+console.log(animal);
