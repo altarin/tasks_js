@@ -268,15 +268,33 @@
 // Добавьте в класс Book метод getTitleAndAuthor, который будет возвращать строку в формате "Название книги - Автор". 
 // Создайте объект book2 на основе класса Book и выведите его название и автора в консоль с помощью метода getTitleAndAuthor.
 
-class Book {
-    constructor(title, author, year) {
-      this.title = title;
-      this.author = author;
-      this.year = year;
+// class Book {
+//     constructor(title, author, year) {
+//       this.title = title;
+//       this.author = author;
+//       this.year = year;
+//     }
+//     getTitleAndAuthor() {
+//       return this.title + " - " + this.author;
+//       }
+//   }
+//   const book = new Book("Выразительный Javascript", "Марейн Хавербек", 2018);
+//     console.log(book.getTitleAndAuthor());
+
+
+// -------------------------------------------------------------------------------------------------------------------------
+
+
+// 13
+
+// Создайте класс BankAccount. Класс должен содержать свойства accountNumber и balance. 
+// Создайте на его основе объект account и выведите его свойства в консоль.
+
+class BankAccount {
+    constructor (accountNumber, balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
     }
-    getTitleAndAuthor() {
-        return this.title - this.author;
-    }
-  }
-  const book = new Book("Выразительный Javascript", "Марейн Хавербек", 2018);
-  console.log(book.getTitleAndAuthor);
+}
+const bankAccount = new BankAccount(267987, 1000);
+console.log(bankAccount);
