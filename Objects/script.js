@@ -388,14 +388,14 @@
 // Создайте класс Point. Класс должен содержать свойства x и y.
 //  Создайте на его основе объект point и выведите его свойства в консоль.
 
-class Point{
-  constructor(x, y) {
-    this.x = x;
-    this.y = y;
-  }
-}
-const point = new Point(3, 6);
-console.log(point);
+// class Point{
+//   constructor(x, y) {
+//     this.x = x;
+//     this.y = y;
+//   }
+// }
+// const point = new Point(3, 6);
+// console.log(point);
 
 
 // --------------------------------------------------------------------------------------------------------------
@@ -403,3 +403,49 @@ console.log(point);
 // 19
 // В классе Point добавлен метод getDistance, который будет возвращать расстояние от точки до начала координат (0,0). 
 // Создайте объект point на основе класса Point и выведите его расстояние до начала координат с помощью метода getDistance.
+
+// class Point {
+//   constructor(x, y) {
+//     this.x = x;
+//     this.y = y;
+//   }
+//   // Метод getDistance возвращает расстояние от точки до начала координат (0,0)
+//   getDistance() {
+//     return Math.sqrt(this.x ** 2 + this.y ** 2);
+//   }
+// }
+// const point = new Point(5, 8);
+// console.log(point.getDistance());
+
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// 20
+// Создайте класс Calculator. Класс должен содержать методы add, subtract, multiply и divide,
+//  которые будут выполнять соответствующие математические операции над двумя числами и возвращать результат. 
+//  Создайте объект calc на основе класса Calculator и выполните следующее математическое
+//   выражение: (((2+2)-1)*4)\2 с помощью методов. Результат вывести в консоль.
+
+class Calculator {
+  add(num1, num2) {
+    return num1 + num2;
+  }
+  subtract(num1, num2) {
+    return num1 - num2;
+  }
+  multiply(num1, num2) {
+    return num1 * num2;
+  }
+  divide(num1, num2) {
+    return num1 / num2;
+  }
+}
+//длинный вариант.
+const calc = new Calculator();
+const addResult = calc.add(2, 2);
+const subtractResult = calc.subtract(addResult, 1);
+const multiplyResult = calc.multiply(subtractResult, 4);
+const divideResult = calc.divide(multiplyResult, 2);
+console.log(divideResult);
+///сокращенный вариант.
+///console.log(calc.divide(calc.multiply(calc.subtract(calc.add(2, 2), 1), 4), 2));
