@@ -353,11 +353,18 @@
 // Создайте класс Animal. Класс должен содержать свойства name и sound. 
 // Создайте на его основе объект animal и выведите его свойства в консоль.
 
-class Animal {
-  constructor(name, sound) {
-    this.name = name;
-    this.sound = sound;
-  }
-}
-const animal = new Animal('Cat', 'purrr');
-console.log(animal);
+// class Animal {
+//   constructor(name, sound) {
+//     this.name = name;
+//     this.sound = sound;
+//   }
+// }
+// const animal = new Animal('Cat', 'purrr');
+// console.log(animal);
+
+
+// ----------------------------------------------------------------------------------------------------------------
+
+// 17
+// Добавьте в класс Animal метод makeSound, который будет выводить в консоль звук животного. 
+// Создайте объект animal на основе класса Animal и вызовите метод makeSound.
