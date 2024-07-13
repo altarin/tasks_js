@@ -230,21 +230,33 @@
 // Добавьте в класс Student метод increaseGrade, который будет увеличивать текущую оценку на 1. 
 // Создайте объект student2 на основе класса Student, увеличьте его оценку с помощью метода increaseGrade и выведите новую оценку в консоль.
 
-class Student {
-    constructor(name, age, grade) {
-      this.name = name;
-      this.age = age;
-      this.grade = grade;
-    }
-      increaseGrade() {
-        this.grade += 1
-      }
-  }
-  const student = new Student("Cat", 29, 2);
-  student.increaseGrade();
-  console.log(student.grade);
+// class Student {
+//     constructor(name, age, grade) {
+//       this.name = name;
+//       this.age = age;
+//       this.grade = grade;
+//     }
+//       increaseGrade() {
+//         this.grade += 1
+//       }
+//   }
+//   const student = new Student("Cat", 29, 2);
+//   student.increaseGrade();
+//   console.log(student.grade);
 
 
 //   -----------------------------------------------------------------------------------------------------------------------
 
 // 11
+// Создайте класс Book. Класс должен содержать свойства title, author и year. 
+// Создайте на его основе объект book и выведите его свойства в консоль.
+
+class Book {
+    constructor (title, author, year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+    }
+}
+const book = new Book('Война и мир', 'Толстой', 1865);
+console.log(book);
