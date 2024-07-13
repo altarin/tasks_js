@@ -251,12 +251,32 @@
 // Создайте класс Book. Класс должен содержать свойства title, author и year. 
 // Создайте на его основе объект book и выведите его свойства в консоль.
 
+// class Book {
+//     constructor (title, author, year) {
+//         this.title = title;
+//         this.author = author;
+//         this.year = year;
+//     }
+// }
+// const book = new Book('Война и мир', 'Толстой', 1865);
+// console.log(book);
+
+
+// ------------------------------------------------------------------------------------------------------------------------
+
+// 12
+// Добавьте в класс Book метод getTitleAndAuthor, который будет возвращать строку в формате "Название книги - Автор". 
+// Создайте объект book2 на основе класса Book и выведите его название и автора в консоль с помощью метода getTitleAndAuthor.
+
 class Book {
-    constructor (title, author, year) {
-        this.title = title;
-        this.author = author;
-        this.year = year;
+    constructor(title, author, year) {
+      this.title = title;
+      this.author = author;
+      this.year = year;
     }
-}
-const book = new Book('Война и мир', 'Толстой', 1865);
-console.log(book);
+    getTitleAndAuthor() {
+        return this.title - this.author;
+    }
+  }
+  const book = new Book("Выразительный Javascript", "Марейн Хавербек", 2018);
+  console.log(book.getTitleAndAuthor);
