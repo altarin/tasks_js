@@ -290,11 +290,30 @@
 // Создайте класс BankAccount. Класс должен содержать свойства accountNumber и balance. 
 // Создайте на его основе объект account и выведите его свойства в консоль.
 
-class BankAccount {
-    constructor (accountNumber, balance) {
-        this.accountNumber = accountNumber;
-        this.balance = balance;
+// class BankAccount {
+//     constructor (accountNumber, balance) {
+//         this.accountNumber = accountNumber;
+//         this.balance = balance;
+//     }
+// }
+// const bankAccount = new BankAccount(267987, 1000);
+// console.log(bankAccount);
+
+// ----------------------------------------------------------------------------------------------------------------------------
+
+// 14
+// Добавьте в класс BankAccount метод deposit, который будет увеличивать баланс на заданную сумму. 
+// Создайте объект account на основе класса BankAccount, пополните его баланс с помощью метода deposit и выведите новый баланс в консоль.
+
+
+class BankAccount{
+    constructor(accountNumber,balance){
+      this.accountNumber = accountNumber
+      this.balance = balance
     }
-}
-const bankAccount = new BankAccount(267987, 1000);
-console.log(bankAccount);
+    deposit() {
+        return this.accountNumber + this.balance;
+    }
+  }
+  const account = new BankAccount(324234,534554)
+  console.log(account.deposit); 
