@@ -510,29 +510,49 @@ console.log(person.city);
 // - После изменений зарплат, создайте переменную salaryInfo, в которой будет лежать строка содержащая информацию о зарплатах вот в таком формате :
 // Frank salary:указать зарплату Franka за год после повышения, Josh salary:указать зарплату Josha за год после повышения
 
-// Выведите переменную salaryInfo в консоль.
+// // Выведите переменную salaryInfo в консоль.
 
-class EmployeeAmazon {
-  constructor (name, position, salary) {
-    this.name = name;
-    this.position = position;
-    this.salary = salary;
-  }
-}
-class EmployeeApple extends EmployeeAmazon {
-constructor(name, position, salary) {
-    super(name, position, salary);
-  }
+// class EmployeeAmazon {
+//   constructor (name, position, salary) {
+//     this.name = name;
+//     this.position = position;
+//     this.salary = salary;
+//   }
+// }
+// class EmployeeApple extends EmployeeAmazon {
+// constructor(name, position, salary) {
+//     super(name, position, salary);
+//   }
 
-  calculateBonus(bonus) {
-      this.salary = (this.salary * bonus) / 100 + this.salary;
-  }
-}
-const employeeAmazon = new EmployeeAmazon("Josh", "Manager", 12000);
-const employeeApple = new EmployeeApple("Frank", "Developer", 220000);
+//   calculateBonus(bonus) {
+//       this.salary = (this.salary * bonus) / 100 + this.salary;
+//   }
+// }
+// const employeeAmazon = new EmployeeAmazon("Josh", "Manager", 12000);
+// const employeeApple = new EmployeeApple("Frank", "Developer", 220000);
 
-//вызов метода calculateBonus c другим контекстом обьекта 
-employeeApple.calculateBonus.bind(employeeAmazon)(15);
-employeeApple.calculateBonus(25);
-const salaryInfo = `Frank salary:${employeeApple.salary}, Josh salary:${employeeAmazon.salary}`;
-console.log(salaryInfo);
+// //вызов метода calculateBonus c другим контекстом обьекта 
+// employeeApple.calculateBonus.bind(employeeAmazon)(15);
+// employeeApple.calculateBonus(25);
+// const salaryInfo = `Frank salary:${employeeApple.salary}, Josh salary:${employeeAmazon.salary}`;
+// console.log(salaryInfo);
+
+// --------------------------------------------------------------------------------------------------------------
+
+// // 24
+// Создайте класс Product. Класс должен содержать свойства name, price и quantity. 
+// Создайте метод displayInfo, который будет выводить все данные в консоль одной строкой :
+// Название продукта:ноутбук, Цена продукта:999, Количество продукта:5
+
+// class Product {
+//   constructor (name, price, quantity) {
+//     this.name = name;
+//     this.price = price;
+//     this.quantity = quantity;
+//   }
+//   displayInfo();
+//   console.log(`"Название продукта: " + ${this.name}, "Цена продукта: " + ${this.price}, "Количество продуктов: " + ${this.quantity}`);
+// }
+
+// const product = new Product("Ноутбук", 999, 5);
+// product.displayInfo();
