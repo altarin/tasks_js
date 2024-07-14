@@ -582,3 +582,24 @@ console.log(person.city);
 // }
 // const product = new Product("Ноутбук", 10, 5);
 // console.log(product.calculateTotalPrice());
+
+// ---------------------------------------------------------------------------
+
+// // 26
+// Создайте класс Triangle. Класс должен содержать свойства side1, side2 и side3, которые представляют
+//  длины сторон треугольника. Создайте на его основе объект triangle с параметрами 3, 4 и 5. Добавьте
+//   в класс Triangle метод calculatePerimeter, который будет возвращать периметр треугольника (сумма длин всех сторон).
+//    Выведите периметр треугольника в консоль с помощью метода calculatePerimeter.
+
+class Triangle {
+    constructor(side1, side2, side3) {
+      this.side1 = side1;
+      this.side2 = side2;
+     this.side3 = side3;
+    }
+    calculatePerimeter(){
+      return this.side1 + this.side2 + this.side3;
+    }
+  }
+  const triangle = new Triangle(3, 4, 5);
+  console.log(triangle.calculatePerimeter());
