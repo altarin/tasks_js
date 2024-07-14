@@ -556,3 +556,29 @@ console.log(person.city);
 
 // const product = new Product("Ноутбук", 999, 5);
 // product.displayInfo();
+
+// -------------------------------------------------------------------------
+// 25
+// Добавьте в класс Product метод calculateTotalPrice, который будет возвращать
+//  общую стоимость продукта (произведение цены на количество). 
+//  Создайте объект product на основе класса Product с ценой 10 и 
+//  количеством 5. Выведите общую стоимость продукта в консоль с помощью 
+//  метода calculateTotalPrice.
+
+// class Product {
+//   constructor(name, price, quantity) {
+//     this.name = name;
+//     this.price = price;
+//     this.quantity = quantity;
+//   }
+//   displayInfo() {
+//     console.log(
+//       `Название продукта:${this.name}, Цена продукта:${this.price}, Количество продукта:${this.quantity}`
+//     );
+//   }
+//   calculateTotalPrice(){
+//     return this.price * this.quantity;
+//   }
+// }
+// const product = new Product("Ноутбук", 10, 5);
+// console.log(product.calculateTotalPrice());
