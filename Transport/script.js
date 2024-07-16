@@ -1,5 +1,6 @@
 
-// Вы устроились разработчиком в автомобильную компанию. Вам нужно написать код, который отвечает за отображение на сайте информации о транспорте и цене. Вам нужно:
+// Вы устроились разработчиком в автомобильную компанию. Вам нужно написать код, который отвечает за отображение на сайте информации о транспорте и цене. 
+// Вам нужно:
 // создать класс Transport, у него есть свойства: type, price, brand и два метода getInfo() и getPrice() ;
 // создать класс Car, который наследует от Transport. Этот класс должен содержать метод getDoorsCount() , который возвращает количество дверей;
 // создать класс Bike, который наследует от Transport. Этот класс должен содержать метод getMaxSpeed(), который возвращает максимальную скорость мотоцикла. Объект, с которым вам предстоит работать:
@@ -37,36 +38,50 @@ const data = [
       image: '<https://cdn.dealerspike.com/imglib/products/harley-showroom/2020/livewire/main/Vivid-Black-Main.png>'
     }
   ];
-
-
   class Transport {
-    constructor(type, price, brand){
-        this.type = type;
-        this.price = price;
-        this.brand = brand;
+    constructor(type, price, model) {
+      
+      this.type = type;
+      this.price = price;
+      this.model = model;
     }
-    getInfo(){
-
+  
+    getInfo() {
+      return this.model;
     }
-    getPrice(){
-
+  
+    getPrice() {
+      return this.price.toLocaleString('ru-RU') + ' ₽';
     }
   }
-
+  
   class Car extends Transport {
-    constructor(type, price, brand){
-        super(type, price, brand);
+    constructor(model, doorsCount, price) {
+      super('car', price, model);
+      this.doorsCount = doorsCount;
     }
-    getDoorsCount(){
-        return data.doors;
+  
+    getInfo = this.getInfo.bind(this);
+    getPrice = this.getPrice.bind(this);
+    getDoorsCount = this.getDoorsCount.bind(this);
+    
+    getDoorsCount() {
+      return `Кол-во дверей: ${this.doorsCount}`;
     }
   }
-
+  
   class Bike extends Transport {
-    constructor(){
-        super()
+    constructor(vendor, model, maxSpeed, price) {
+      super('bike', price, vendor, model);
+      this.maxSpeed = maxSpeed;
     }
-    getMaxSpeed(){
-        return data.maxSpeed;
+  
+    getInfo = this.getInfo.bind(this);
+    getPrice = this.getPrice.bind(this);
+    getMaxSpeed = this.getMaxSpeed.bind(this);
+  
+   
+    getMaxSpeed() {
+      return `Макс. скорость: ${this.maxSpeed} км/ч`;
     }
   }
