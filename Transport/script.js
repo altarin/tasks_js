@@ -71,8 +71,8 @@ const data = [
   }
   
   class Bike extends Transport {
-    constructor(vendor, model, maxSpeed, price) {
-      super('bike', price, vendor, model);
+    constructor(model, maxSpeed, price) {
+      super('bike', price, model);
       this.maxSpeed = maxSpeed;
     }
   
