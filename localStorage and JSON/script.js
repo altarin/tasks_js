@@ -36,3 +36,9 @@
 // Создайте функцию makeFive, создайте в ней переменную key, в которую поместите строковое значение 'item',
 //  добавьте в Local Storage значение null, а ключ заберите из переменной key и вызовите функцию.
 
+// function makeFive() {
+//     const key = 'item';
+//   localStorage.setItem(key, null);
+//   }
+//   makeFive();
+
