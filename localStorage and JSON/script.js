@@ -2,6 +2,14 @@
 // Создайте функцию makeOne которая записывает в Local Storage ключ games со значением 11 и вызовите ее.
 
 function makeOne() {
-    window.localStorage.setItem('games', '11')
+    window.localStorage.setItem('games', '11');
+}
+makeOne()
+
+//   2
+// Создайте функцию makeTwo, которая сохраняет в Local Storage строку "7,6,5". Ключ назовите numbers. После чего вызовите функцию.
+
+function makeTwo() {
+    window.localStorage.setItem('numbers', '7,6,5');
   }
-  makeOne()
+  makeTwo()
