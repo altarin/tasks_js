@@ -122,3 +122,48 @@
 //     { name: "Кот", age: 40 }
 //     ]. Вызовите функцию
 //     Подсказка: Для преобразования массива в строку используйте метод JSON.stringify()
+
+// function makeEleven() {
+//     const arr = JSON.stringify([
+//  { name: "Алиса", age: 30 },
+//  { name: "Филин", age: 35 },
+//  { name: "Кот", age: 40 }
+//  ]);
+//     localStorage.setItem('arrayEleven', arr);
+//  }
+//  makeEleven()
+
+// 12 ---------------------------------------------------------------------------------------------------------------
+// Вам нужно будет создать две функции: addLocalStorageEleven и renderLocalStorage.
+// Функция addLocalStorageEleven должна записать в localStorage arr = [
+// { name: "Алиса", age: 30 },
+// { name: "Филин", age: 35 },
+// { name: "Кот", age: 40 }
+// ] под ключом arrTwelve.
+// После чего создаем вторую функциию renderLocalStorage.
+// Она должна находить span c классом practicum12, который чуть ниже задания, и в него с помощью метода TextContent должно записываться имя пользователя из localStorage name первого пользователя из массива .
+// Вызываем функцию addLocalStorageEleven renderLocalStorage и нажимаем кнопку Проверить.
+
+// Подсказки :
+// -не перепутайте последовательность вызова функций, сначала записываем в localStorage, потом забираем.
+// -для того, чтобы записать данные, оборачиваем в JSON.stringify, для того, чтобы с полученными данными работать - JSON.parse.
+
+// <span class="practicum12">Тут должен быть ваш текст</span>
+// Тут должен быть ваш текст
+
+
+function addLocalStorageEleven() {
+	const arr =[
+		{ name: "Алиса", age: 30 },
+		{ name: "Филин", age: 35 },
+		{ name: "Кот", age: 40 }
+	]
+	localStorage.setItem('arrTwelve',JSON.stringify(arr))
+}
+function renderLocalStorage(){
+	const arr = JSON.parse(localStorage.getItem('arrTwelve'))
+	const span = document.querySelector('.practicum12')
+	span.textContent =  arr[0].name 	
+}
+addLocalStorageEleven()
+renderLocalStorage()
