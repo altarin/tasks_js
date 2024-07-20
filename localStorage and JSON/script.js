@@ -495,4 +495,26 @@
 //       </form>
 //     </div>
 
+
+
+// function addNewUserLocalStorage(){
+// 	const myForm = document.querySelector("#task23");
+// 	const arr = JSON.parse(localStorage.getItem("task23"));
+// 	const formData = new FormData(myForm);
+//   const user = {};
+//   for (let [name, value] of formData) {
+//     if (value === "") {
+//       console.log("не все поля заполнены");
+//       return;
+//     }
+//     user[name] = value;
+//   }
+//   arr.push(user);
+//   localStorage.setItem("task23", JSON.stringify(arr));
+// }
+// addNewUserLocalStorage()
+
+
 // 24 ---------------------------------------------------------------------------------------------------
+
+// Создайте функцию clearArr, которая очистит весь массив task23 в Local Storage.
