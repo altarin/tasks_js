@@ -292,7 +292,34 @@
 
 //  <div class="practicum17"></div>
 
+
+// function createUser() {
+//   const objUser = {
+//     nameUser: "Cat",
+//     ageUser: 30,
+//     workUser: "ItGirls",
+//     emailUser: "catEmail@gamil.com",
+//     phoneUser: "+7946138520",
+//   };
+//   localStorage.setItem("objLocalUser", JSON.stringify(objUser));
+// }
+// function renderCardUser () {
+//   const obj = JSON.parse(localStorage.getItem('objLocalUser'))
+//   document.querySelector('.practicum17').innerHTML = 
+//   `<h1>${obj.nameUser}</h1>
+// 	<p>Возраст:${obj.ageUser}</p>
+// 	<p>Место работы:${obj.workUser}</p>
+// 	<p>Почта:${obj.emailUser}</p>
+// 	<p>Номер телефона:${obj.phoneUser}</p>
+//   `
+// };
+// createUser()
+// renderCardUser()
+
+
 // 18 ---------------------------------------------------------------------------------------------------
+// Создайте функцию clearLocalStorage, которая очищает весь Local Storage. Вызовите ее.
+
 
 // 19 ---------------------------------------------------------------------------------------------------
 
