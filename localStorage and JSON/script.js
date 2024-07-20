@@ -200,12 +200,36 @@
 // Подсказка: для преобразования строки в объект используйте метод JSON.parse(). Для работы с массивом используйте циклы.
 
 //  <div class="pr"><span class="practicum14"></span></div>
-// Тут появится ваш текст после нажатия кнопки
+// Тут появится ваш текст после нажатия кнопки (15)
 
-
+// function addLocalStorage (){
+// 	localStorage.setItem("arrLocal",JSON.stringify([1,2,3,4,5]));
+// }
+// function calcArr(){
+//   	const arr = JSON.parse(localStorage.getItem('arrLocal'));
+ 
+//     let sum = 0;
+//     arr.forEach(item =>{
+//       sum += item
+//     })
+  
+// 	const span = document.querySelector('.practicum14');
+//     span.textContent = sum;
+// }
+// addLocalStorage()
+// calcArr()
 
 
 // 15 ---------------------------------------------------------------------------------------------------
+// У вас есть функция addLocalStorage, которая записывает обьект в Local Storage под ключом objLoсal
+// Вам нужно получить этот обьект и вывести строку в тег span с классом practicum15 а таком формате:
+// name:Cat; age:20; work:ItGirls
+// Не забываем про методы parse и stringify, для преобразования обьекта в нужную строчку используем цикл for in.
+
+//  <div class="pr"><span class="practicum15"></span></div>
+// Тут появится ваш текст после нажатия кнопки
+
+
 
 // 16 ---------------------------------------------------------------------------------------------------
 
