@@ -456,7 +456,43 @@
 
 
 
-// 23 ---------------------------------------------------------------------------------------------------
+// function removeToCart() {
+//   const arr = JSON.parse(localStorage.getItem("task22"));
+//   if (!arr) {
+//     console.log("такого массива не существует.");
+//     return;
+//   }
+//   const valueId = document.querySelector("#task22").value;
+//   if (valueId === "") {
+//     console.log("не выбран index");
+//     return;
+//   }
+//   const newArr = arr.filter((item, index) => index !== +valueId);
+//   localStorage.setItem("task22", JSON.stringify(newArr));
+// }
+// removeToCart();
 
+
+// 23 ---------------------------------------------------------------------------------------------------
+// У нас есть функция addNewUserLocalStorage, она должна:
+// -Находить форму с помощью id task23 и записать в переменную myForm
+// -Забрать из localStorage массив и записать его в переменную arr
+// - Воспользоваться классом myForm и получить эту форму
+// -Создать пустой обьект user и с помощью цикла for of перебрать объект, который мы получили от класса FormData
+// -Внутри цикла написать условие, которое будет заканчивать цикл, если хотя бы одно из полей формы будет не заполнено и выводить в консоль сообщение об этом. Если мы зашли в это условие, функция также должна прекращать свою работу.
+// - Полученный обьект добавить в конец массива arr и записать arr в localStorage под ключом 'task23'.
+
+//     <div class="html">
+//       <form id="task23">
+//         <label>User name</label>
+//         <input type="text" name="user-name" />
+//         <label>Email</label>
+//         <input type="email" name="email" />
+//         <label>Password</label>
+//         <input type="password" name="password" />
+//         <label>id</label>
+//         <input type="number" name="userId" />
+//       </form>
+//     </div>
 
 // 24 ---------------------------------------------------------------------------------------------------
