@@ -256,9 +256,41 @@
 //  <div class="pr"><span class="practicum16"></span></div>
 // Тут появится ваш текст после нажатия кнопки
 
+// function addLocalStorageSixteen() {
+//   localStorage.setItem(
+//     "objLocal",
+//     JSON.stringify({
+//       city: "Лондон",
+//       country: "Великобритания",
+//       population: 8900000,
+//       language: "английский",
+//     })
+//   );
+// }
+// function renderString (){
+// const obj = JSON.parse(localStorage.getItem("objLocal"));
+// document.querySelector('.practicum16').textContent = `Город ${obj.city} имеет население ${obj.population} человек`;
+// }
+// addLocalStorageSixteen()
+// renderString()
 
 // 17 ---------------------------------------------------------------------------------------------------
+// У вас есть две createUser, в которой вы должны создать обьект любого пользователя и в нем обязательно должны быть поля: nameUser,ageUser, workUser, emailUser, phoneUser.
+// Этот объект вы должны записать в localStorage под ключом objLocalUser.
+// Поля не должны оставаться пустыми, их нужно заполнить рандомной информацией.
+// И функция renderCardUser, в ней вы должны получить обьект этого пользователя из localStorage.
 
+// После чего найти div с классом practicum17 и положить туда с помощью метода innerHTML шаблонную строку.
+// Шаблонная строка должна содержать в себе верстку, где userName является заголовком первого порядка, а остальные данные должны быть обернуты в тег <p></p>.
+
+// Результат, как должно получиться:
+// Cat
+// Возраст:30 лет
+// Место работы:itGirls
+// Почта:catEmail@gamil.com
+// Номер телефона:+7946138520
+
+//  <div class="practicum17"></div>
 
 // 18 ---------------------------------------------------------------------------------------------------
 
