@@ -180,20 +180,29 @@
 // Тут появится ваш текст после нажатия кнопки
 
 
-function  addLocalStorage() {
-	localStorage.setItem('arrLocal',JSON.stringify(["яблоко","банан","апельсин"]))
-}
+// function  addLocalStorage() {
+// 	localStorage.setItem('arrLocal',JSON.stringify(["яблоко","банан","апельсин"]))
+// }
 
-function showTen(){
-  	const arr = JSON.parse(localStorage.getItem('arrLocal'));
-	const span = document.querySelector('.practicum13');
-    span.textContent =  arr.join(',');
-}
-addLocalStorage()
-showTen()
+// function showTen(){
+//   	const arr = JSON.parse(localStorage.getItem('arrLocal'));
+// 	const span = document.querySelector('.practicum13');
+//     span.textContent =  arr.join(',');
+// }
+// addLocalStorage()
+// showTen()
 
 
 // 14 ---------------------------------------------------------------------------------------------------
+// У вас есть функция addLocalStorage, которая записывает в localStorage массив.
+// Нужно создать функцияю calcArr, которая будет получать массив из localStorage.
+// Получить сумму элементов массива и записать его в тег span c классом practicum14.
+// Подсказка: для преобразования строки в объект используйте метод JSON.parse(). Для работы с массивом используйте циклы.
+
+//  <div class="pr"><span class="practicum14"></span></div>
+// Тут появится ваш текст после нажатия кнопки
+
+
 
 
 // 15 ---------------------------------------------------------------------------------------------------
