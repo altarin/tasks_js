@@ -229,10 +229,32 @@
 //  <div class="pr"><span class="practicum15"></span></div>
 // Тут появится ваш текст после нажатия кнопки
 
-
+// function addLocalStorageSet() {
+//   localStorage.setItem(
+//     "objLoсal",
+//     JSON.stringify({ name: "Cat", age: 20, work: "ItGirls" })
+//   );
+// }
+// function renderUser() {
+//   const obj = JSON.parse(localStorage.getItem("objLoсal"));
+//   let str = "";
+//   for (let key in obj) {
+//     str += `${key}: ${obj[key]};`;
+//   }
+//   document.querySelector(".practicum15").textContent = str;
+// }
+// addLocalStorageSet();
+// renderUser();
 
 // 16 ---------------------------------------------------------------------------------------------------
+// У вас есть функция addLocalStorageSixteen, которая запиcывает в localStorage обьект под ключом objLocal.
+// В функции renderString вам нужно в переменной obj получить обьект из localStorage.
+// Найти тег span по классу practicum16 и поместить туда такую строку 'Город Лондон имеет население 8900000 человек'
+// Лондон и 8900000 должны подставляться из обьекта с Local Storage как переменные в строку.
+// Подсказка: Для склеивания строки лучше всего использоваьть шаблонные строки.
 
+//  <div class="pr"><span class="practicum16"></span></div>
+// Тут появится ваш текст после нажатия кнопки
 
 
 // 17 ---------------------------------------------------------------------------------------------------
