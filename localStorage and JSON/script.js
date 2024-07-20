@@ -152,18 +152,73 @@
 // Тут должен быть ваш текст
 
 
-function addLocalStorageEleven() {
-	const arr =[
-		{ name: "Алиса", age: 30 },
-		{ name: "Филин", age: 35 },
-		{ name: "Кот", age: 40 }
-	]
-	localStorage.setItem('arrTwelve',JSON.stringify(arr))
+// function addLocalStorageEleven() {
+// 	const arr =[
+// 		{ name: "Алиса", age: 30 },
+// 		{ name: "Филин", age: 35 },
+// 		{ name: "Кот", age: 40 }
+// 	]
+// 	localStorage.setItem('arrTwelve',JSON.stringify(arr));
+// }
+// function renderLocalStorage(){
+// 	const arr = JSON.parse(localStorage.getItem('arrTwelve'));
+// 	const span = document.querySelector('.practicum12');
+// 	span.textContent =  arr[0].name;	
+// }
+// addLocalStorageEleven();
+// renderLocalStorage();
+
+
+
+// 13---------------------------------------------------------------------------------------------------------------
+// Функция addLocalStorage записывает массив в localStorage под ключом arrLocal.
+// Ваша задача создать функцию showTen, которая получит из Local Storage сохраннённый массив.
+// Найти элемент с классом practicum13 и записать в него все элементы из массива через запятую.
+// Подсказка: Для преобразования строки в объект используйте метод JSON.parse(). Для преобразования массива в нужную строку используйте метод join().
+
+//  <div class="pr"><span class="practicum13"></span></div>
+// Тут появится ваш текст после нажатия кнопки
+
+
+function  addLocalStorage() {
+	localStorage.setItem('arrLocal',JSON.stringify(["яблоко","банан","апельсин"]))
 }
-function renderLocalStorage(){
-	const arr = JSON.parse(localStorage.getItem('arrTwelve'))
-	const span = document.querySelector('.practicum12')
-	span.textContent =  arr[0].name 	
+
+function showTen(){
+  	const arr = JSON.parse(localStorage.getItem('arrLocal'));
+	const span = document.querySelector('.practicum13');
+    span.textContent =  arr.join(',');
 }
-addLocalStorageEleven()
-renderLocalStorage()
+addLocalStorage()
+showTen()
+
+
+// 14 ---------------------------------------------------------------------------------------------------
+
+
+// 15 ---------------------------------------------------------------------------------------------------
+
+// 16 ---------------------------------------------------------------------------------------------------
+
+
+
+// 17 ---------------------------------------------------------------------------------------------------
+
+
+// 18 ---------------------------------------------------------------------------------------------------
+
+// 19 ---------------------------------------------------------------------------------------------------
+
+
+// 20 ---------------------------------------------------------------------------------------------------
+
+
+// 21 ---------------------------------------------------------------------------------------------------
+
+
+// 22 ---------------------------------------------------------------------------------------------------
+
+// 23 ---------------------------------------------------------------------------------------------------
+
+
+// 24 ---------------------------------------------------------------------------------------------------
