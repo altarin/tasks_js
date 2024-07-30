@@ -108,3 +108,37 @@
 // Вывести количество участников для активности в <p>
 // - В случае ошибки выведите сообщение 'Ошибка. Запрос не выполнен'
 
+// function makeFive() {
+//     const paragraph = document.getElementById('practicum')
+    
+//     fetch('https://www.boredapi.com/api/activity')
+//     .then((res) => {
+//       return res.json()
+//     })
+//     .then((data) => {
+//       paragraph.textContent = `Activity: ${data.participants}`
+//     })
+//     .catch((err) => {
+//       paragraph.textContent = 'Ошибка. Запрос не выполнен'
+//     });
+//   }
+//   makeFive()
+
+// 6
+// Создайте функцию makeSix, которая выполняет GET-запрос по адресу https://www.boredapi.com/api/activity, 
+// используя функцию fetch(). Выведите в <p> свойства из полученного объекта, такие как activity, type, price и accessibility.
+// - В случае ошибки выведите сообщение 'Ошибка. Запрос не выполнен'
+
+// function makeSix() {
+//     const paragraph = document.getElementById('practicum')
+   
+//     fetch('https://www.boredapi.com/api/activity')
+
+//    .then((data) => {
+//      paragraph.textContent = `${data.participants}, ${data.type}, ${data.price}, ${data.accessibility}`
+//    })
+//    .catch((err) => {
+//      paragraph.textContent = 'Ошибка. Запрос не выполнен'
+//    });
+//  }
+//  makeSix()
