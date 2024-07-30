@@ -82,3 +82,29 @@
 // - Вывести полученную активность в формате 'Activity: описание активности' в <p>
 // - В случае ошибки выведите сообщение 'Ошибка. Запрос не выполнен'
 
+// function makeFour() {
+//     const paragraph = document.getElementById('practicum')
+    
+//     fetch('https://www.boredapi.com/api/activity')
+//     .then((res) => {
+//       return res.json()
+//     })
+//     .then((data) => {
+//       paragraph.textContent = `Activity: ${data.activity}`
+//     })
+//     .catch((err) => {
+//       paragraph.textContent = 'Ошибка. Запрос не выполнен'
+//     });
+//   }
+//   makeFour()
+
+
+// 5
+// Создайте функцию makeFive, которая выполняет следующие действия:
+
+// Функция makeFive должна сделать GET-запрос по адресу https://www.boredapi.com/api/activity с помощью функции fetch()
+// Полученный ответ должен быть преобразован в формат JSON с помощью метода response.json()
+// Затем из полученного JSON-объекта нужно извлечь свойство "participants", которое содержит количество участников для активности
+// Вывести количество участников для активности в <p>
+// - В случае ошибки выведите сообщение 'Ошибка. Запрос не выполнен'
+
