@@ -60,3 +60,25 @@
 //  используя функцию fetch(). Выведите в <p> свойство statusText полученного объекта.
 // В случае ошибки выведите сообщение 'Ошибка. Запрос не выполнен'
 
+// function makeThree() {
+//     const paragraph = document.getElementById('practicum')
+//     fetch('https://www.boredapi.com/api/activity')
+//       .then((data) => {
+//         paragraph.textContent = data.statusText
+//         console.log(data.statusText)
+//       })
+//       .catch((err) => {
+//         paragraph.textContent = 'Ошибка. Запрос не выполнен'
+//       });
+//   }
+//   makeThree()
+
+// 4
+// Создайте функцию makeFour, которая выполняет следующие действия:
+
+// - Функция makeFour должна сделать GET-запрос по адресу https://www.boredapi.com/api/activity с помощью функции fetch()
+// - Полученный ответ должен быть преобразован в формат JSON с помощью метода response.json()
+// - Затем из полученного JSON-объекта нужно извлечь свойство "activity", которое содержит описание активности
+// - Вывести полученную активность в формате 'Activity: описание активности' в <p>
+// - В случае ошибки выведите сообщение 'Ошибка. Запрос не выполнен'
+
