@@ -25,4 +25,31 @@
 
 // makeOne()
 
+// 2/
+// Создайте функцию makeTwo, которая выполняет следующие действия:
 
+// - Функция makeTwo должна сделать GET-запрос по адресу https://emojihub.yurace.pro/api/random/group/face-positive с помощью функции fetch()
+// - Полученный ответ должен быть преобразован в формат JSON с помощью метода response.json()
+// - Затем из полученного JSON-объекта нужно извлечь свойство "name"
+// - Полученное значение вставьте в элемент с id "practicum" в DOM-дерево
+// - В случае ошибки выведите сообщение 'Произошла ошибка'
+
+// Помни, что выполнение асинхронного кода занимает какое-то время.
+
+// <section class='html'>
+//   <p id="practicum"></p>
+// </section>
+
+
+// const paragraph = document.getElementById('practicum');
+// function makeTwo() {
+// 	fetch ('https://emojihub.yurace.pro/api/random/group/face-positive')
+  
+// .then((res) => {
+//   paragraph.textContent = res.response.json('name')
+// })
+// .catch((err) => {
+//   paragraph.textContent = "Произошла ошибка"
+//  })
+// }
+// makeTwo()
