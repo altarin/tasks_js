@@ -9,21 +9,21 @@
 //   <p id="practicum"></p>
 // </section>
 
-// const paragraph = document.getElementById('practicum');
-// function makeOne() {
-//   fetch ('<https://catfact.ninja/fact>')
+const paragraph = document.getElementById('practicum');
+function makeOne() {
+  fetch ('<https://catfact.ninja/fact>')
 
-//   //Если есть ответ от сервера, выведи его свойство status в <p>
-//   .then((res) => {
-//     paragraph.textContent = res.status;
-//   })
-//   .catch((err) => {
-//    paragraph.textContent = "Ошибка. Запрос не выполнен";
-//   });
+  //Если есть ответ от сервера, выведи его свойство status в <p>
+  .then((res) => {
+    paragraph.textContent = res.status;
+  })
+  .catch((err) => {
+   paragraph.textContent = "Ошибка. Запрос не выполнен";
+  });
 
-// }
+}
 
-// makeOne()
+makeOne()
 
 // 2
 // Создайте функцию makeTwo, которая выполняет следующие действия:
@@ -41,18 +41,18 @@
 // </section>
 
 
-// const paragraph = document.getElementById('practicum');
-// function makeTwo() {
-// 	fetch ('https://emojihub.yurace.pro/api/random/group/face-positive')
+const paragraph = document.getElementById('practicum');
+function makeTwo() {
+	fetch ('https://emojihub.yurace.pro/api/random/group/face-positive')
   
-// .then((res) => {
-//   paragraph.textContent = res.response.json('name')
-// })
-// .catch((err) => {
-//   paragraph.textContent = "Произошла ошибка"
-//  })
-// }
-// makeTwo()
+.then((res) => {
+  paragraph.textContent = res.response.json('name')
+})
+.catch((err) => {
+  paragraph.textContent = "Произошла ошибка"
+ })
+}
+makeTwo()
 
 
 // // 3
@@ -60,18 +60,18 @@
 //  используя функцию fetch(). Выведите в <p> свойство statusText полученного объекта.
 // В случае ошибки выведите сообщение 'Ошибка. Запрос не выполнен'
 
-// function makeThree() {
-//     const paragraph = document.getElementById('practicum')
-//     fetch('https://www.boredapi.com/api/activity')
-//       .then((data) => {
-//         paragraph.textContent = data.statusText
-//         console.log(data.statusText)
-//       })
-//       .catch((err) => {
-//         paragraph.textContent = 'Ошибка. Запрос не выполнен'
-//       });
-//   }
-//   makeThree()
+function makeThree() {
+    const paragraph = document.getElementById('practicum')
+    fetch('https://www.boredapi.com/api/activity')
+      .then((data) => {
+        paragraph.textContent = data.statusText
+        console.log(data.statusText)
+      })
+      .catch((err) => {
+        paragraph.textContent = 'Ошибка. Запрос не выполнен'
+      });
+  }
+  makeThree()
 
 // 4
 // Создайте функцию makeFour, которая выполняет следующие действия:
@@ -82,21 +82,21 @@
 // - Вывести полученную активность в формате 'Activity: описание активности' в <p>
 // - В случае ошибки выведите сообщение 'Ошибка. Запрос не выполнен'
 
-// function makeFour() {
-//     const paragraph = document.getElementById('practicum')
+function makeFour() {
+    const paragraph = document.getElementById('practicum')
     
-//     fetch('https://www.boredapi.com/api/activity')
-//     .then((res) => {
-//       return res.json()
-//     })
-//     .then((data) => {
-//       paragraph.textContent = `Activity: ${data.activity}`
-//     })
-//     .catch((err) => {
-//       paragraph.textContent = 'Ошибка. Запрос не выполнен'
-//     });
-//   }
-//   makeFour()
+    fetch('https://www.boredapi.com/api/activity')
+    .then((res) => {
+      return res.json()
+    })
+    .then((data) => {
+      paragraph.textContent = `Activity: ${data.activity}`
+    })
+    .catch((err) => {
+      paragraph.textContent = 'Ошибка. Запрос не выполнен'
+    });
+  }
+  makeFour()
 
 
 // 5
@@ -108,37 +108,42 @@
 // Вывести количество участников для активности в <p>
 // - В случае ошибки выведите сообщение 'Ошибка. Запрос не выполнен'
 
-// function makeFive() {
-//     const paragraph = document.getElementById('practicum')
+function makeFive() {
+    const paragraph = document.getElementById('practicum')
     
-//     fetch('https://www.boredapi.com/api/activity')
-//     .then((res) => {
-//       return res.json()
-//     })
-//     .then((data) => {
-//       paragraph.textContent = `Activity: ${data.participants}`
-//     })
-//     .catch((err) => {
-//       paragraph.textContent = 'Ошибка. Запрос не выполнен'
-//     });
-//   }
-//   makeFive()
+    fetch('https://www.boredapi.com/api/activity')
+    .then((res) => {
+      return res.json()
+    })
+    .then((data) => {
+      paragraph.textContent = `Activity: ${data.participants}`
+    })
+    .catch((err) => {
+      paragraph.textContent = 'Ошибка. Запрос не выполнен'
+    });
+  }
+  makeFive()
 
 // 6
 // Создайте функцию makeSix, которая выполняет GET-запрос по адресу https://www.boredapi.com/api/activity, 
 // используя функцию fetch(). Выведите в <p> свойства из полученного объекта, такие как activity, type, price и accessibility.
 // - В случае ошибки выведите сообщение 'Ошибка. Запрос не выполнен'
 
-// function makeSix() {
-//     const paragraph = document.getElementById('practicum')
+function makeSix() {
+    const paragraph = document.getElementById('practicum')
    
-//     fetch('https://www.boredapi.com/api/activity')
+    fetch('https://www.boredapi.com/api/activity')
 
-//    .then((data) => {
-//      paragraph.textContent = `${data.participants}, ${data.type}, ${data.price}, ${data.accessibility}`
-//    })
-//    .catch((err) => {
-//      paragraph.textContent = 'Ошибка. Запрос не выполнен'
-//    });
-//  }
-//  makeSix()
+   .then((data) => {
+     paragraph.textContent = `${data.participants}, ${data.type}, ${data.price}, ${data.accessibility}`
+   })
+   .catch((err) => {
+     paragraph.textContent = 'Ошибка. Запрос не выполнен'
+   });
+ }
+ makeSix()
+
+// 7
+// Создайте функцию makeSeven, которая выполняет GET-запрос по адресу https://api.agify.io/, 
+// используя функцию fetch(). Выведите в <p> ответ с сервера (не забудь преобразовать его к строке с помощью JSON.stringify()), чтобы убедиться, что получили данные.
+// В случае ошибки выведите сообщение 'Ошибка. Запрос не выполнен'
